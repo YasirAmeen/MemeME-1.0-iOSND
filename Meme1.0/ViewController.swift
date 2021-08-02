@@ -32,8 +32,8 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate , UINav
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureTextField(topText, text: "TOP")
-        configureTextField(bottomText, text: "BOTTOM")
+        setupTextField(topText, text: "TOP")
+        setupTextField(bottomText, text: "BOTTOM")
     }
     
    
@@ -159,7 +159,7 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate , UINav
     }
  
     
-    func configureTextField(_ textField: UITextField, text: String) {
+    func setupTextField(_ textField: UITextField, text: String) {
         
         textField.text = text
         textField.defaultTextAttributes = [
@@ -172,6 +172,8 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate , UINav
         textField.delegate = self
   
     }
+    
+    
     
     
     
